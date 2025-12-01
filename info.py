@@ -8,7 +8,7 @@ bot = telebot.TeleBot(BOT_TOKEN, parse_mode="HTML")
 
 ALLOWED_GROUPS = "-1003038685431"
 
-API_LINK = "https://info-hexv-3.vercel.app/"
+API_LINK = "https://info-hexv-3.vercel.app/info?{uid}"
 
 def format_timestamp(timestamp):
     """Convert timestamp to readable date"""
