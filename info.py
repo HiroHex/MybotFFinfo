@@ -31,7 +31,7 @@ def handle_info(message):
 
     args = message.text.split()
     if len(args) != 2:
-        bot.reply_to(message, "<b>Usage: /inf {uid}</b>\n\n<b>Example:</b> <code>/inf 9042676924</code>")
+        bot.reply_to(message, "<b>Usage: /inf {uid}</b>\n\n<b>Example:</b> <code>/inf 3392962048</code>")
         return
 
     uid = args[1]
@@ -41,7 +41,7 @@ def handle_info(message):
         bot.reply_to(message, "<b>Error:</b> UID must contain only numbers")
         return
 
-    processing_msg = bot.reply_to(message, "<b>Fetching player info...</b>")
+    processing_msg = bot.reply_to(message, "<b>Проверяю данные об игроке...</b>")
     try:
         # Always use SG region
         url = f"{API_LINK}/info?uid={uid}"
