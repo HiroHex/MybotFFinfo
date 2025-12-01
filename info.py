@@ -173,7 +173,7 @@ def handle_info(message):
             )
                 
         else:
-            text = "<b>❌ Failed to fetch player information. Please check the UID and try again.</b>"
+            text = "<b>❌ Ошибка команда Hiro hex спит. Бот отдыхает, попробуй через 15мин.</b>"
         
         bot.edit_message_text(text, message.chat.id, processing_msg.message_id)
     except Exception as e:
