@@ -3,7 +3,7 @@ import requests
 import time
 from datetime import datetime
 
-BOT_TOKEN = "8244684898:AAGr1USCJMT_x8L0NzleqA0BmJ4vfILO4WU"
+BOT_TOKEN = "8282505034:AAE4RmS8xuG8R2AYnyK0lQ_f0h7-IoYDYhE"
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode="HTML")
 
 ALLOWED_GROUPS = "-1003038685431"
