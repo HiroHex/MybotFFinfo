@@ -7,7 +7,7 @@ BOT_TOKEN = "8282505034:AAE4RmS8xuG8R2AYnyK0lQ_f0h7-IoYDYhE"
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode="HTML")
 
 ALLOWED_GROUPS = "-1003038685431"
-API_LINK = "https://kallu-info-api.vercel.app/uid={uid}"
+API_LINK = "https://info-hexv-3.vercel.app/info?={uid}"
 def format_timestamp(timestamp):
     """Convert timestamp to readable date"""
     try:
@@ -20,7 +20,7 @@ def decode_unicode_escape(text):
     try:
         return text.encode('utf-8').decode('unicode_escape')
     except:
-        return text
+        retu"rn text
 
 @bot.message_handler(commands=["inf"])
 def handle_info(message):
